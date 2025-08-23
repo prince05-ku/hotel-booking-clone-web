@@ -36,3 +36,10 @@ ScrollReveal().reveal(".header_container btn", {
     ...scrollRevealOption,
     delay:1000,
 });
+
+// room container
+
+ScrollReveal().reveal(".room_card", {
+    ...scrollRevealOption,
+    interval: 500,
+}) 
