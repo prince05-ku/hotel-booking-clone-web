@@ -349,5 +349,42 @@ nav {
 
 .room_card_details h3 span {
     font-size: 0.8rem;
-    
+}
+
+/* intro section */
+
+.intro {
+    position: relative;
+    isolation: isolate;
+    background-color: var(--primary-color);
+}
+
+.intro::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 100%;
+    width: calc(100vw /4);
+    background-color: var(--secondary-color);
+    z-index: -1;
+}
+
+.intro_container {
+    display: grid;
+    gap: 4rem 2rem;
+}
+
+.intro_container .section_subheader {
+    color: var(--secondary-color);
+}
+
+.intro_container :is(.section_header, .section_description) {
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.intro_video {
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
