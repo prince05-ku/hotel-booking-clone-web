@@ -42,4 +42,11 @@ ScrollReveal().reveal(".header_container btn", {
 ScrollReveal().reveal(".room_card", {
     ...scrollRevealOption,
     interval: 500,
-}) 
+})
+
+// feature section
+
+ScrollReveal().reveal(".feature_card", {
+    ...scrollRevealOption,
+    interval: 500,
+})
